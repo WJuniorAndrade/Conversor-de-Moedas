@@ -8,6 +8,9 @@
     <title>Conversor de Moedas</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/bandeiraJS.css">
+    <link rel="stylesheet" href="css/painel.css">
+
     <script src="js/script.js" defer></script>
     <script src="js/convert.js" defer></script>
     <script src="js/validate.js" defer></script>
@@ -17,88 +20,98 @@
 
     <section class="section-form">
 
-        <h1>Conversor de Moedas</h1>
+        <div class="bandeira-background"></div>
 
         <form class="formulario container">
 
-            <div class="input-value">
+            <!-- <div class="input-value">
                 <label for="valor">Valor a ser convertido:</label>
                 <input type="number" name="valor" id="valor">
+            </div> -->
+
+            <div id="painel">
+                <input type="text" name="valor" id="valor" autocomplete="off" placeholder="R$:">
+                <!-- Tentar colocar expreções res que deixam uma predefinição de formatação de numeros no input -->
+
+                <span id="painel-conversor"> ... </span>
+
             </div>
+
+
+
 
             <button type="button" class="moedas" value="dolarAmericano" id="dolar-americano">
                 
-                    <div class="bandeira-moeda">
-                        <img class="moeda-image" src="image/bandeira-americana.png" alt="Bandeira Americana">
+                    <div class="selecao-moeda">
+                        <span class="bandeira-position bandeira-americana"></span>
+                        
                         <div>Dolar Americano</div>
                     </div>
                 
 
-                <p>USD $</p>
+                <p class="simbolo">USD $</p>
 
             </button>
 
             <button input type="button" class="moedas" value="dolarCanadiano" id="dolar-canadiano">
 
-                <div class="bandeira-moeda">
-                    <img class="moeda-image" src="image/bandeira-americana.png" alt="Bandeira Americana">
+                <div class="selecao-moeda">
+                    <span class="bandeira-position bandeira-canadiana"></span>
                     <div>Dolar Canadiano</div>
                 </div>
             
 
-            <p>USD $</p>
+            <p class="simbolo">CAD $</p>
             
             </button>
 
             <button type="button" class="moedas" value="dolarAustraliano" id="dolar-australiano">
 
-                <div class="bandeira-moeda">
-                    <img class="moeda-image" src="image/bandeira-americana.png" alt="Bandeira Americana">
+                <div class="selecao-moeda">
+                    <span class="bandeira-position bandeira-australiana"></span>
                     <div>Dolar Australiano</div>
                 </div>
             
 
-            <p>USD $</p>
+            <p class="simbolo">AUD $</p>
     
             </button>
 
             <button input type="button" class="moedas" value="ieneJapones" id="iene-japones">
 
-                <div class="bandeira-moeda">
-                    <img class="moeda-image" src="image/bandeira-americana.png" alt="Bandeira Americana">
+                <div class="selecao-moeda">
+                    <span class="bandeira-position bandeira-japonesa"></span>
                     <div>Iene Japones</div>
                 </div>
             
 
-            <p>USD $</p>
+            <p class="simbolo">JPY ￥</p>
             
             </button>
 
             <button type="button" class="moedas" value="euro" id="euro">
 
-                <div class="bandeira-moeda">
-                    <img class="moeda-image" src="image/bandeira-americana.png" alt="Bandeira Americana">
+                <div class="selecao-moeda">
+                    <span class="bandeira-position bandeira-europeia"></span>
                     <div>Euro</div>
                 </div>
             
 
-            <p>USD $</p>
+            <p class="simbolo">EUR €</p>
                 
             </button>
 
             <button input type="button" class="moedas" value="bitcoin" id="bitcoin">
 
-                <div class="bandeira-moeda">
-                    <img class="moeda-image" src="image/bandeira-americana.png" alt="Bandeira Americana">
+                <div class="selecao-moeda">
+                    <span class="bandeira-position moeda-bitcoin"></span>
                     <div>Bitcoin</div>
                 </div>
             
 
-            <p>USD $</p>
+            <p class="simbolo">BTC</p>
                 
             </button>
-
-            <p id="para">..</p>
 
         </form>
     </section>

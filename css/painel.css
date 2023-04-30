@@ -1,0 +1,36 @@
+#painel {
+    background-color: rgba(255, 255, 255, 0.148);
+    width: 80%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1rem;
+    padding: 5px;
+    margin: 20px 0px;
+
+}
+
+#painel-conversor {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+}
+
+input{
+    width: 50%;
+    font-size: 2em;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    outline: 0;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: var(--font-body);
+}
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.521);
+}
