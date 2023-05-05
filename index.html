@@ -6,10 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Moedas</title>
+    <link rel="shortcut icon" href="image/MoedaBitcoin.png" type="image/x-icon">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/bandeiraJS.css">
+    
     <link rel="stylesheet" href="css/painel.css">
+    <link rel="stylesheet" href="css/header.css">
 
     <script src="js/script.js" defer></script>
     <script src="js/convert.js" defer></script>
@@ -18,36 +22,37 @@
 
 <body>
 
-    <section class="section-form">
+    <header>
+        <ul class="menubar">
+            <li id="title-header">Conversor de Moedas</li>
+            <li id="perfil"><img src="image/juniorColor.jpeg" alt="Perfil"></li>
+        </ul>
+    </header>
+
+
+    <form class="formulario">
 
         <div class="bandeira-background"></div>
 
-        <form class="formulario container">
-
-            <!-- <div class="input-value">
-                <label for="valor">Valor a ser convertido:</label>
-                <input type="number" name="valor" id="valor">
-            </div> -->
+        <div class="container-moedas">
 
             <div id="painel">
-                <input type="text" name="valor" id="valor" autocomplete="off" placeholder="R$:">
-                <!-- Tentar colocar expreções res que deixam uma predefinição de formatação de numeros no input -->
 
+                <input type="text" name="valor" id="valor" autocomplete="off" placeholder="R$:">
                 <span id="painel-conversor"> ... </span>
 
             </div>
 
 
 
-
             <button type="button" class="moedas" value="dolarAmericano" id="dolar-americano">
-                
-                    <div class="selecao-moeda">
-                        <span class="bandeira-position bandeira-americana"></span>
-                        
-                        <div>Dolar Americano</div>
-                    </div>
-                
+
+                <div class="selecao-moeda">
+                    <span class="bandeira-position bandeira-americana"></span>
+
+                    <div>Dolar Americano</div>
+                </div>
+
 
                 <p class="simbolo">USD $</p>
 
@@ -59,10 +64,10 @@
                     <span class="bandeira-position bandeira-canadiana"></span>
                     <div>Dolar Canadiano</div>
                 </div>
-            
 
-            <p class="simbolo">CAD $</p>
-            
+
+                <p class="simbolo">CAD $</p>
+
             </button>
 
             <button type="button" class="moedas" value="dolarAustraliano" id="dolar-australiano">
@@ -71,10 +76,10 @@
                     <span class="bandeira-position bandeira-australiana"></span>
                     <div>Dolar Australiano</div>
                 </div>
-            
 
-            <p class="simbolo">AUD $</p>
-    
+
+                <p class="simbolo">AUD $</p>
+
             </button>
 
             <button input type="button" class="moedas" value="ieneJapones" id="iene-japones">
@@ -83,10 +88,10 @@
                     <span class="bandeira-position bandeira-japonesa"></span>
                     <div>Iene Japones</div>
                 </div>
-            
 
-            <p class="simbolo">JPY ￥</p>
-            
+
+                <p class="simbolo">JPY ￥</p>
+
             </button>
 
             <button type="button" class="moedas" value="euro" id="euro">
@@ -95,10 +100,10 @@
                     <span class="bandeira-position bandeira-europeia"></span>
                     <div>Euro</div>
                 </div>
-            
 
-            <p class="simbolo">EUR €</p>
-                
+
+                <p class="simbolo">EUR €</p>
+
             </button>
 
             <button input type="button" class="moedas" value="bitcoin" id="bitcoin">
@@ -107,14 +112,25 @@
                     <span class="bandeira-position moeda-bitcoin"></span>
                     <div>Bitcoin</div>
                 </div>
-            
 
-            <p class="simbolo">BTC</p>
-                
+
+                <p class="simbolo">BTC</p>
+
             </button>
+        </div>
 
-        </form>
-    </section>
+
+    </form>
+
+    <div class="social-midia">
+        
+        <a href="https://www.linkedin.com/in/juniorandrade2022/" target="_blank"> <img src="image/linkedin.png" alt=""></a>
+
+        <a href="https://www.instagram.com/junior.add_/" target="_blank"><img src="image/instagram.png" alt=""></a>
+
+        <a href="https://github.com/WJuniorAndrade" target="_blank"><img src="image/github.png" alt=""></a>
+
+    </div>
 
 </body>
 

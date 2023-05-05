@@ -1,18 +1,14 @@
-.section-form{
-    background-color: rgba(97, 97, 97, 0.148);
+
+.formulario{
+    background-color: #a29f9f75;
     width: 60vw;
-    height: 60vh;
+    height: 65vh; 
     display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);    
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    transform: translate(-50%,-50%); 
+    font-family: var(--font-poppins);
     
 }
 
@@ -24,24 +20,39 @@
 }
 
 
-.formulario{
-    width: 75%;
-    height: 100%;
-    
-}
+.container-moedas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+
+} 
 
 .moedas{
-    width: 80%;
-    height: 5vh;
+    width: 90%;
+    height: 6vh;
     background-color: transparent;
     margin: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-     color: rgba(255, 255, 255, 0.763);
-     border: 1px solid rgba(255, 255, 255, 0.226);
+    color: #010101c3;
+    border: 1px solid #01010141;
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    
 }
 
+.moedas:focus{
+    border: 1px solid rgba(4, 180, 4, 0.786);
+
+}
+
+.moedas:hover{
+    background-color: #a29f9f75;
+    transition: 0.5s;
+        
+}
 
 .selecao-moeda{
     display: flex;
@@ -86,5 +97,50 @@
 
 .simbolo{
     margin-right: 10px;
-    color: rgba(255, 255, 255, 0.37);
+    color: #01010182;
+}
+
+
+
+
+/* Moedas */
+@media screen and (max-width:500px){
+    .formulario{
+        background-color: transparent;
+        width: 100vw;
+        height: 80vh; 
+        display: flex;
+        position: relative;
+        top: 0%;
+        left: 0%;
+        transform: none; 
+        margin-bottom: 10px;
+        
+    }
+    
+    .bandeira-background{
+        display: none;
+    }
+
+    .container-moedas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        
+    } 
+
+    .moedas{
+        font-size: 0.8rem;
+        margin: 10px;
+    }
+
+    .selecao-moeda{
+        display: flex;
+        align-items: center;
+        width: 60%;
+        height: 100%; 
+    }
+
 }

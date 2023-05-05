@@ -1,12 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,200;1,400&display=swap');
+
+@import url(form.css);
+@import url(header.css);
+@import url(painel.css);
+
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
+
+:root{
+    --font-poppins:'Poppins', sans-serif;
+}
+
+
 body{
-    background-color: rgb(54, 53, 53);
+    background-color: rgb(223, 217, 217);
     width: 100vw;
     height: 100vh;
     position: relative;
+    font-family: var(--font-poppins);
+}
+
+.social-midia{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0%;
+    top: 34%;
+}
+
+.social-midia a{
+    padding: 20px 8px;
+}
+
+.social-midia img{
+    width: 75%;
+}
+
+.social-midia img:hover{
+    width: 80%;
+    transition: 0.3s;
+}
+
+
+
+/* Mobile */
+@media (max-width:500px){
+    body{
+        background-color: none;
+        width: 100vw;
+        height: 100vh;
+        position: none;
+        
+    }
+
+    .social-midia{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        right: 0%;
+        top: 0%;
+    }
     
+    .social-midia a{
+        padding: 0px 0px;
+    }
+    
+    .social-midia img{
+        width: 50%;
+    }
+
 }
