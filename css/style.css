@@ -12,11 +12,40 @@
 
 :root{
     --font-poppins:'Poppins', sans-serif;
+
+    /* Desktop */
+    /* body */
+    --bg-body: #dfd9d9;
+
+
+    /* Form */
+    --form-bg-color: #a29f9f75;
+    --font-moedas: #010101c3; 
+    --color-borda-moedas: #01010141;
+    --color-borda-moedas-focus: #04b404c8;
+    --bg-color-hover: #a29f9f75;
+    --font-color-simbolo: #01010181;
+
+    /* Painel */
+    --bg-painel: #01010123;
+    --font-color-painel-input-borde: #010101c3;
+    --input-placeholder: #01010163; 
+
+
+    
+    /* Mobile */
+    /* Form */
+    --color-font-moedas: #ffffff;
+    --color-painel-simbolos:#ffffffd2;
+    --bg-mobile-form:#6d6b6b80;
+
+    /* Painel */
+    
 }
 
 
 body{
-    background-color: rgb(223, 217, 217);
+    background-color: #dfd9d9;
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -39,17 +68,14 @@ body{
     width: 75%;
 }
 
-.social-midia img:hover{
-    width: 80%;
-    transition: 0.3s;
-}
 
 
 
 /* Mobile */
-@media (max-width:500px){
+@media screen and (max-width: 550px){
     body{
-        background-color: none;
+        background-image: url("../image/bandeira-Brasil-backG.png");
+        background-size: cover;
         width: 100vw;
         height: 100vh;
         position: none;
@@ -57,21 +83,6 @@ body{
     }
 
     .social-midia{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        right: 0%;
-        top: 0%;
+        display:  none;
     }
-    
-    .social-midia a{
-        padding: 0px 0px;
-    }
-    
-    .social-midia img{
-        width: 50%;
-    }
-
 }

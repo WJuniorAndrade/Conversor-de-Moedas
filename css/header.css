@@ -1,12 +1,12 @@
 header{
     display: none;
-    background-color: rgba(255, 255, 255, 0.554);
+    background-color: #ffffff8d;
     padding: 10px 0px;
     height: 12vh; 
 }
 
 .menubar{
-    width: 85vw;
+    width: 80vw;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -27,8 +27,14 @@ header{
 
 /* Mobile */
 
-@media  screen and (max-width:550px) {
+@media  screen and (max-width: 550px) {
     header{
         display: block;
+        background-color: #fffdfd33;
+        color: white; 
+    }
+
+    #title-header{
+        font-size: 1.2rem;
     }
 }

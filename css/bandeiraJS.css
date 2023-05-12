@@ -21,3 +21,34 @@
 .bitcoin{
     background-image: url("../image/bitcoin-back.png");
 }
+
+
+
+/* Mobile */
+@media screen and (max-width:550px){
+    .bodyAmericana{
+        background-image: url("../image/bandeira-americana-back.png");
+       
+    }
+    
+    .bodyCanadar{
+        background-image: url("../image/bandeira-canadar-back.png");
+    }
+    
+    .bodyAustralia{
+        background-image: url("../image/bandeira-australiana-back.png");
+        
+    }
+    
+    .bodyJapao{
+        background-image: url("../image/bandeira-japao-back.png");
+    }
+    
+    .bodyEuropa{
+        background-image: url("../image/bandeira-europa-back.png");
+    }
+    
+    .bodyBitcoin{
+        background-image: url("../image/bitcoin-back.png");
+    }
+}
